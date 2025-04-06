@@ -68,7 +68,7 @@ gamGPDboot(x, B, threshold, nextremes = NULL, datvar, etaFrhs, nuFrhs,
 }
 \value{
   \code{gamGPDfit()} returns either an empty list (\code{list()}; in
-  case at least one of the two \code{\link{gam}()} calls in the internal
+  case at least one of the two \code{\link[gam]{gam}()} calls in the internal
   function \code{gamGPDfitUp()} fails) or a list with the components
   \describe{
     \item{\code{xi}:}{estimated parameters \eqn{\xi}{xi};}
@@ -110,7 +110,7 @@ gamGPDboot(x, B, threshold, nextremes = NULL, datvar, etaFrhs, nuFrhs,
   the first component contains the results of
   the initial fit via \code{gamGPDfit()} and the other \code{B}
   components contain the results for each replication of the
-  post-blackend bootstrap. Components for which \code{\link{gam}()}
+  post-blackend bootstrap. Components for which \code{\link[gam]{gam}()}
   fails (e.g., due to too few data) are given as empty lists (\code{list()}).
 }
 \details{
@@ -150,7 +150,7 @@ gamGPDboot(x, B, threshold, nextremes = NULL, datvar, etaFrhs, nuFrhs,
   corresponding excesses, and refits the GPD parameters via
   \code{gamGPDfit()} again.
 
-  Note that if \code{\link{gam}()} fails in \code{gamGPDfit()} or the
+  Note that if \code{\link[gam]{gam}()} fails in \code{gamGPDfit()} or the
   fitting or one of the bootstrap replications in \code{gamGPDboot()},
   then the output object contains (an) empty (sub)list(s). These
   failures typically happen for too small sample sizes.
