@@ -2,10 +2,6 @@ Package: QRM
 Version: 0.4-35
 Date: 2025-04-06
 Title: Provides R-Language Code to Examine Quantitative Risk Management Concepts
-Author: Bernhard Pfaff [aut, cre],
-  Marius Hofert [ctb],
-  Alexander McNeil [aut] (S-Plus original (QRMlib)),
-  Scott Ulmann [trl] (First R port as package QRMlib)
 Maintainer: Bernhard Pfaff <bernhard@pfaffikus.de>
 Authors@R: c(person(given = "Bernhard",
                       family = "Pfaff",
